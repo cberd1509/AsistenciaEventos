@@ -40,6 +40,7 @@ namespace MegamusicAsistencia
             btAsistencia.Visible = false;
             btRefrigerios.Visible = false;
             bunifuImageButton1.Visible = false;
+            btAddCedula.Visible = false;
 
             pnContainer.Controls.Clear();
             pnContainer.Controls.Add(inicio);
@@ -132,6 +133,8 @@ namespace MegamusicAsistencia
             btAsistencia.Visible = true;
             btRefrigerios.Visible = true;
             bunifuImageButton1.Visible = true;
+            btAddCedula.Visible = true;
+
 
             System.Data.DataTable dt = selectQuery("SELECT * FROM eventos WHERE id="+eventid);
 

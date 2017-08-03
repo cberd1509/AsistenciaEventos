@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btAddCedula = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btRefrigerios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btAsistencia = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btAddAsistentes = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -40,7 +41,6 @@
             this.btMinimizar = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btCerrar = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnContainer = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.bunifuFlatButton1);
+            this.panel3.Controls.Add(this.btAddCedula);
             this.panel3.Controls.Add(this.btRefrigerios);
             this.panel3.Controls.Add(this.btAsistencia);
             this.panel3.Controls.Add(this.btAddAsistentes);
@@ -73,6 +73,44 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(740, 47);
             this.panel3.TabIndex = 3;
+            // 
+            // btAddCedula
+            // 
+            this.btAddCedula.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.btAddCedula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.btAddCedula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btAddCedula.BorderRadius = 0;
+            this.btAddCedula.ButtonText = "Añadir por Cédula";
+            this.btAddCedula.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAddCedula.DisabledColor = System.Drawing.Color.Gray;
+            this.btAddCedula.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btAddCedula.Iconcolor = System.Drawing.Color.Transparent;
+            this.btAddCedula.Iconimage = null;
+            this.btAddCedula.Iconimage_right = null;
+            this.btAddCedula.Iconimage_right_Selected = null;
+            this.btAddCedula.Iconimage_Selected = null;
+            this.btAddCedula.IconMarginLeft = 0;
+            this.btAddCedula.IconMarginRight = 0;
+            this.btAddCedula.IconRightVisible = true;
+            this.btAddCedula.IconRightZoom = 0D;
+            this.btAddCedula.IconVisible = false;
+            this.btAddCedula.IconZoom = 90D;
+            this.btAddCedula.IsTab = true;
+            this.btAddCedula.Location = new System.Drawing.Point(397, 0);
+            this.btAddCedula.Name = "btAddCedula";
+            this.btAddCedula.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.btAddCedula.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.btAddCedula.OnHoverTextColor = System.Drawing.Color.White;
+            this.btAddCedula.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btAddCedula.selected = false;
+            this.btAddCedula.Size = new System.Drawing.Size(185, 47);
+            this.btAddCedula.TabIndex = 6;
+            this.btAddCedula.TabStop = false;
+            this.btAddCedula.Text = "Añadir por Cédula";
+            this.btAddCedula.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btAddCedula.Textcolor = System.Drawing.Color.White;
+            this.btAddCedula.TextFont = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAddCedula.Visible = false;
             // 
             // btRefrigerios
             // 
@@ -291,43 +329,6 @@
             this.pnContainer.TabIndex = 1;
             this.pnContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnContainer_Paint);
             // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Añadir por Cédula";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = false;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(397, 0);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(185, 47);
-            this.bunifuFlatButton1.TabIndex = 6;
-            this.bunifuFlatButton1.TabStop = false;
-            this.bunifuFlatButton1.Text = "Añadir por Cédula";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,7 +364,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btAsistencia;
         private System.Windows.Forms.Panel pnContainer;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btAddCedula;
     }
 }
 
