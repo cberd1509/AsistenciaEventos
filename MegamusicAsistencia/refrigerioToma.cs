@@ -88,7 +88,7 @@ namespace MegamusicAsistencia
             DataRow fila = datos.Rows[0];
             int id = int.Parse(fila[0].ToString());
 
-            query = "INSERT INTO "+ rtoma + " (idhrrefri,idasistente) VALUES ('" + id + "','" + codigo + "')";
+            query = "INSERT INTO "+ rtoma + " (idhrrefri,idasistente) VALUES ('" + id + "','" + int.Parse(codigo) + "')";
 
             parentform.insertQuery(query);
 

@@ -40,6 +40,7 @@
             this.btMinimizar = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btCerrar = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnContainer = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -49,7 +50,7 @@
             // panel1
             // 
             this.panel1.AllowDrop = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -62,6 +63,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.bunifuFlatButton1);
             this.panel3.Controls.Add(this.btRefrigerios);
             this.panel3.Controls.Add(this.btAsistencia);
             this.panel3.Controls.Add(this.btAddAsistentes);
@@ -69,18 +71,19 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(565, 47);
+            this.panel3.Size = new System.Drawing.Size(740, 47);
             this.panel3.TabIndex = 3;
             // 
             // btRefrigerios
             // 
-            this.btRefrigerios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
-            this.btRefrigerios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
+            this.btRefrigerios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.btRefrigerios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
             this.btRefrigerios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btRefrigerios.BorderRadius = 0;
             this.btRefrigerios.ButtonText = "Refrigerios";
             this.btRefrigerios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btRefrigerios.DisabledColor = System.Drawing.Color.Gray;
+            this.btRefrigerios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btRefrigerios.Iconcolor = System.Drawing.Color.Transparent;
             this.btRefrigerios.Iconimage = null;
             this.btRefrigerios.Iconimage_right = null;
@@ -93,10 +96,10 @@
             this.btRefrigerios.IconVisible = false;
             this.btRefrigerios.IconZoom = 90D;
             this.btRefrigerios.IsTab = true;
-            this.btRefrigerios.Location = new System.Drawing.Point(397, 0);
+            this.btRefrigerios.Location = new System.Drawing.Point(581, 0);
             this.btRefrigerios.Name = "btRefrigerios";
-            this.btRefrigerios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
-            this.btRefrigerios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
+            this.btRefrigerios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.btRefrigerios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
             this.btRefrigerios.OnHoverTextColor = System.Drawing.Color.White;
             this.btRefrigerios.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btRefrigerios.selected = false;
@@ -111,13 +114,14 @@
             // 
             // btAsistencia
             // 
-            this.btAsistencia.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
-            this.btAsistencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
+            this.btAsistencia.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.btAsistencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
             this.btAsistencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btAsistencia.BorderRadius = 0;
             this.btAsistencia.ButtonText = "Asistencia";
             this.btAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btAsistencia.DisabledColor = System.Drawing.Color.Gray;
+            this.btAsistencia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btAsistencia.Iconcolor = System.Drawing.Color.Transparent;
             this.btAsistencia.Iconimage = null;
             this.btAsistencia.Iconimage_right = null;
@@ -132,8 +136,8 @@
             this.btAsistencia.IsTab = true;
             this.btAsistencia.Location = new System.Drawing.Point(278, 0);
             this.btAsistencia.Name = "btAsistencia";
-            this.btAsistencia.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
-            this.btAsistencia.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
+            this.btAsistencia.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.btAsistencia.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
             this.btAsistencia.OnHoverTextColor = System.Drawing.Color.White;
             this.btAsistencia.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btAsistencia.selected = false;
@@ -148,13 +152,14 @@
             // 
             // btAddAsistentes
             // 
-            this.btAddAsistentes.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
-            this.btAddAsistentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
+            this.btAddAsistentes.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.btAddAsistentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
             this.btAddAsistentes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btAddAsistentes.BorderRadius = 0;
             this.btAddAsistentes.ButtonText = "Añadir Asistentes";
             this.btAddAsistentes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btAddAsistentes.DisabledColor = System.Drawing.Color.Gray;
+            this.btAddAsistentes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btAddAsistentes.Iconcolor = System.Drawing.Color.Transparent;
             this.btAddAsistentes.Iconimage = null;
             this.btAddAsistentes.Iconimage_right = null;
@@ -169,8 +174,8 @@
             this.btAddAsistentes.IsTab = true;
             this.btAddAsistentes.Location = new System.Drawing.Point(94, 0);
             this.btAddAsistentes.Name = "btAddAsistentes";
-            this.btAddAsistentes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
-            this.btAddAsistentes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
+            this.btAddAsistentes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.btAddAsistentes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
             this.btAddAsistentes.OnHoverTextColor = System.Drawing.Color.White;
             this.btAddAsistentes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btAddAsistentes.selected = false;
@@ -185,13 +190,14 @@
             // 
             // btInicio
             // 
-            this.btInicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
-            this.btInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
+            this.btInicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.btInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
             this.btInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btInicio.BorderRadius = 0;
             this.btInicio.ButtonText = "Inicio";
             this.btInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btInicio.DisabledColor = System.Drawing.Color.Gray;
+            this.btInicio.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btInicio.Iconcolor = System.Drawing.Color.Transparent;
             this.btInicio.Iconimage = null;
             this.btInicio.Iconimage_right = null;
@@ -206,8 +212,8 @@
             this.btInicio.IsTab = true;
             this.btInicio.Location = new System.Drawing.Point(0, 0);
             this.btInicio.Name = "btInicio";
-            this.btInicio.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(78)))));
-            this.btInicio.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
+            this.btInicio.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.btInicio.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
             this.btInicio.OnHoverTextColor = System.Drawing.Color.White;
             this.btInicio.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btInicio.selected = false;
@@ -222,7 +228,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
             this.panel2.Controls.Add(this.bunifuImageButton1);
             this.panel2.Controls.Add(this.btMinimizar);
             this.panel2.Controls.Add(this.btCerrar);
@@ -234,7 +240,7 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(58)))));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
             this.bunifuImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton1.Image = global::ControlAsistencia.Properties.Resources.iconExcel1;
@@ -285,6 +291,43 @@
             this.pnContainer.TabIndex = 1;
             this.pnContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnContainer_Paint);
             // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Añadir por Cédula";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = null;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = false;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = true;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(397, 0);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(93)))), ((int)(((byte)(171)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(117)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(185, 47);
+            this.bunifuFlatButton1.TabIndex = 6;
+            this.bunifuFlatButton1.TabStop = false;
+            this.bunifuFlatButton1.Text = "Añadir por Cédula";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,7 +339,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Gestión de Eventos";
+            this.Text = "Event Manager";
             this.Load += new System.EventHandler(this.CargaFormulario);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -320,6 +363,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btAsistencia;
         private System.Windows.Forms.Panel pnContainer;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }
 
